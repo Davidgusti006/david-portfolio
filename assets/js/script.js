@@ -411,3 +411,35 @@ document.addEventListener("DOMContentLoaded", () => {
 function closePopup() {
   document.getElementById("popup").style.display = "none"; // ✅ tutup popup
 }
+
+// ======== FITUR 7: MODAL ZOOM GAMBAR SERTIFIKAT ========
+
+document.addEventListener("DOMContentLoaded", function () {
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImg");
+  const captionText = document.getElementById("caption");
+  const closeBtn = document.querySelector(".close-modal");
+
+  if (!modal) return; // cegah error jika modal belum ada di halaman
+
+  // Saat gambar sertifikat diklik → tampilkan modal
+  document.querySelectorAll(".cert-card img").forEach((img) => {
+    img.addEventListener("click", function () {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    });
+  });
+
+  // Tutup modal saat tombol X diklik
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  // Tutup modal saat klik di luar gambar
+  window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+});
