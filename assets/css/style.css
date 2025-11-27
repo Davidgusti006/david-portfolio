@@ -252,6 +252,9 @@ body.light-mode #hero {
   object-fit: cover;
   border: 5px solid var(--primary-color);
   box-shadow: 0 0 20px rgba(0, 170, 255, 0.3);
+  transition: transform 0.15s ease;
+  position: relative;
+  will-change: transform;
 }
 
 .about-content p {
@@ -1131,3 +1134,4 @@ body:not(.light-mode) #bgParticles {
     opacity: 1;
   }
 }
+
