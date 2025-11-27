@@ -1,3 +1,18 @@
+// Animasi gerakan mouse pada gambar profil
+const profilePic = document.querySelector(".profile-pic");
+
+profilePic.addEventListener("mousemove", (e) => {
+  const rect = profilePic.getBoundingClientRect();
+  const x = e.clientX - rect.left - rect.width / 2;
+  const y = e.clientY - rect.top - rect.height / 2;
+
+  profilePic.style.transform = `translate(${x * 0.1}px, ${y * 0.1}px)`;
+});
+
+profilePic.addEventListener("mouseleave", () => {
+  profilePic.style.transform = "translate(0, 0)";
+});
+
 // ==== Background Particles ====
 const canvas = document.getElementById("bgParticles");
 const ctx = canvas.getContext("2d");
@@ -443,3 +458,4 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
