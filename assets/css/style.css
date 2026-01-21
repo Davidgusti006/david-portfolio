@@ -354,24 +354,44 @@ body.light-mode #hero {
 
 /* ==== Efek Neon per Brand ==== */
 
+/* Java */
+.skill-item:hover .fa-java {
+  color: #007396;
+  text-shadow: 0 0 15px #007396;
+}
+.skill-item:hover:has(.fa-java) {
+  background: rgba(0, 115, 150, 0.15);
+  box-shadow: 0 0 25px #007396;
+}
+
+/* Python */
+.skill-item:hover .fa-python {
+  color: #3776ab;
+  text-shadow: 0 0 15px #3776ab;
+}
+.skill-item:hover:has(.fa-python) {
+  background: rgba(55, 118, 171, 0.15);
+  box-shadow: 0 0 25px #3776ab;
+}
+
 /* HTML5 */
 .skill-item:hover .fa-html5 {
-  color: #e44d26;
-  text-shadow: 0 0 15px #e44d26;
+  color: #e34f26;
+  text-shadow: 0 0 15px #e34f26;
 }
-.skill-item:hover {
-  background: rgba(228, 77, 38, 0.15);
-  box-shadow: 0 0 25px #e44d26;
+.skill-item:hover:has(.fa-html5) {
+  background: rgba(227, 79, 38, 0.15);
+  box-shadow: 0 0 25px #e34f26;
 }
 
 /* CSS3 */
 .skill-item:hover .fa-css3-alt {
-  color: #264de4;
-  text-shadow: 0 0 15px #264de4;
+  color: #1572b6;
+  text-shadow: 0 0 15px #1572b6;
 }
 .skill-item:hover:has(.fa-css3-alt) {
-  background: rgba(38, 77, 228, 0.15);
-  box-shadow: 0 0 25px #264de4;
+  background: rgba(21, 114, 182, 0.15);
+  box-shadow: 0 0 25px #1572b6;
 }
 
 /* JavaScript */
@@ -384,34 +404,14 @@ body.light-mode #hero {
   box-shadow: 0 0 25px #f7df1e;
 }
 
-/* Node.js */
-.skill-item:hover .fa-node-js {
-  color: #68a063;
-  text-shadow: 0 0 15px #68a063;
+/* Bootstrap */
+.skill-item:hover .fa-bootstrap {
+  color: #7952b3;
+  text-shadow: 0 0 15px #7952b3;
 }
-.skill-item:hover:has(.fa-node-js) {
-  background: rgba(104, 160, 99, 0.15);
-  box-shadow: 0 0 25px #68a063;
-}
-
-/* Figma */
-.skill-item:hover .fa-figma {
-  color: #a259ff;
-  text-shadow: 0 0 15px #a259ff;
-}
-.skill-item:hover:has(.fa-figma) {
-  background: rgba(162, 89, 255, 0.15);
-  box-shadow: 0 0 25px #a259ff;
-}
-
-/* Git */
-.skill-item:hover .fa-git-alt {
-  color: #f05033;
-  text-shadow: 0 0 15px #f05033;
-}
-.skill-item:hover:has(.fa-git-alt) {
-  background: rgba(240, 80, 51, 0.15);
-  box-shadow: 0 0 25px #f05033;
+.skill-item:hover:has(.fa-bootstrap) {
+  background: rgba(121, 82, 179, 0.15);
+  box-shadow: 0 0 25px #7952b3;
 }
 
 /* ==== Teks ikut menyesuaikan ==== */
